@@ -53,11 +53,11 @@ function addFeature(tile, feature, tolerance, noSimplify) {
             ring = geom[i];
 
             // filter out tiny polylines & polygons
-            if (!noSimplify && ((type === 2 && ring.dist < tolerance) ||
+            /*if (!noSimplify && ((type === 2 && ring.dist < tolerance) ||
                                 (type === 3 && ring.area < sqTolerance))) {
                 tile.numPoints += ring.length;
                 continue;
-            }
+            }*/
 
             var simplifiedRing = [];
 
